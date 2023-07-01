@@ -132,4 +132,4 @@ if __name__ == '__main__':
         for line in f.readlines():
             names.append(line.strip())
 
-    app.run(host='0.0.0.0')
+    # app.run(host='0.0.0.0')
