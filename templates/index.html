@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flask App</title>
+    <title>Object Detection Results</title>
 </head>
 <body>
-    <h1>Welcome to my Flask App!</h1>
-    <p>This is a simple Flask application.</p>
+    <h1>Object Detection Results</h1>
+    <p>Execution Time: {{ exec_time }} ms</p>
+    <img src="{{ url_for('video') }}" width="50%"/>
 </body>
 </html>
