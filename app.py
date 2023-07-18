@@ -126,10 +126,10 @@ def video():
 
 if __name__ == '__main__':
     input_width, input_height = 352, 352
-    session = onnxruntime.InferenceSession('FastestDet.onnx')
+    session = onnxruntime.InferenceSession('model/FastestDet.onnx')
     names = []
     with open("static/coco.names", 'r') as f:
         for line in f.readlines():
             names.append(line.strip())
 
-    # app.run(host='0.0.0.0')
+    app.run()
